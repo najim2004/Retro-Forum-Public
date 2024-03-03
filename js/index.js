@@ -66,6 +66,7 @@ const displayPostData = (postData) => {
 }
 
 
+
 const markRead = (id, view) => {
     const markRead=getElementById('mark-read');
     let readCount=parseInt(getElementById('read-count').innerText)+1;
@@ -125,11 +126,28 @@ const displayLatestPostData=(latestPostData)=>{
 const searchPosts = ()=> {
     const inputFieldValue = getElementById('input-field').value.toLowerCase();
     loadPosts(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${inputFieldValue}`);
+    document.getElementById('discuss-posts').classList.add('hidden');
+    document.getElementById('spinner').classList.remove('hidden');
+    spinnerLoading();
 }
 
 loadLatestPosts();
 loadPosts();
 
+
 const getElementById = (id) => {
     return document.getElementById(id);
-}
+};
+
+
+
+// spinner loading
+const spinnerLoading =() => {
+    const spinnerElement=getElementById('spinner');
+    const discussPosts=getElementById('discuss-posts');
+    setTimeout(() => {
+        spinnerElement.classList.add('hidden');
+        discussPosts.classList.remove('hidden'); 
+    }, 2000);
+};
+spinnerLoading();
