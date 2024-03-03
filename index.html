@@ -29,7 +29,7 @@
 </head>
 
 <body class="inter">
-    <header class="container max-w-[1170px] mx-auto mb-[100px] lg:mt-[55px] p-3 lg:p-0">
+    <header class="container max-w-[1170px] mx-auto lg:mb-[100px] lg:mt-[55px] p-3 lg:p-0">
         <!-- navbar section -->
         <nav>
             <div class="flex justify-between">
@@ -118,13 +118,13 @@
             </div>
         </div>
     </header>
-    <main class="container max-w-[1170px] mx-auto">
+    <main class="container max-w-[1170px] mx-auto p-4 lg:p-0">
         <!-- Let’s Discuss section -->
         <section class="flex flex-col items-center">
             <h3 class="mulish text-[40px] font-black">Let’s Discuss</h3>
             <p class="max-w-[691px] text-center text-lg mt-6 text-[rgba(18,19,45,0.60)]">Yes, you can run unit tests and
                 view the results directly within the app. The integrated testing features allow for a streamlined .</p>
-            <div class="flex lg:flex-row mt-12 flex-col-reverse gap-6 mb-[100px]">
+            <div class="flex lg:flex-row mt-12 flex-col-reverse gap-6 mb-12 lg:mb-[100px]">
 
                 <div class="">
 
@@ -132,7 +132,8 @@
                         class="flex flex-col lg:flex-row text-center gap-6 bg-[#F3F3F5] border-[1px] rounded-[24px] p-10">
                         <div class="relative mx-auto lg:mx-0 size-[72px] rounded-2xl bg-white">
                             <img class="" src="" alt="">
-                            <span class="absolute rounded-[50%] -top-1 -right-1 size-[18px] border-[2px] border-white bg-[#FF3434]"></span>
+                            <span
+                                class="absolute rounded-[50%] -top-1 -right-1 size-[18px] border-[2px] border-white bg-[#FF3434]"></span>
                         </div>
                         <div class="">
 
@@ -179,9 +180,104 @@
                 </div>
             </div>
         </section>
-    </main>
-    <footer>
 
+        <!-- forum section -->
+        <section
+            class="w-full min-h-[403px] p-5 lg:p-0 gap-5 lg:gap-0 lg:pl-[90px] bg-[#12132D] flex flex-col lg:flex-row rounded-[32px] justify-center items-center">
+            <div class="text-center lg:text-start">
+                <h3 class="text-[30px] lg:text-[40px] font-black mulish text-white">Join Our Forum</h3>
+                <p class="max-w-[652px] text-[rgba(255,255,255,0.80)] mulish mt-4 mb-8">Share your favorite opinion and
+                    win and wp forum coffee mug! Yes, you can run unit tests and view the results directly within the
+                    app. </p>
+
+                <button
+                    class="btn h-[56px] w-[232px] bg-[#797DFC] rounded-[50px] mulish text-xl font-bold text-white border-none">Registered
+                    Now</button>
+            </div>
+            <div class="flex h-full items-end">
+                <img class="lg:max-w-[388px] lg:max-h-[341px]" src="./images/joinforum.png" alt="">
+            </div>
+        </section>
+
+        <!-- Latest Posts section -->
+        <section class=" mt-12 lg:mt-[100px]">
+            <h3 class="text-center mulish text-[40px] font-black">Latest Posts</h3>
+            <p class="text-center mb-12 mx-auto max-w-[691px] text-center text-lg mt-6 text-[rgba(18,19,45,0.60)]">Yes, you can run
+                unit tests and view the results directly within the app. The integrated testing features allow for a
+                streamlined .</p>
+
+            <div id="latest-container" class=" flex flex-col lg:flex-row gap-6">
+
+                <div class="p-6 rounded-3xl border-[1px] border-[rgba(18,19,45,0.15)]">
+                    <div class="mx-auto max-h-[190px] max-w-[326px] bg-[rgba(18,19,45,0.05)] rounded-[20px]">
+                        <img class="w-full h-full rounded-[20px]" src="./images/bgbanner.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <p class="text-start mt-6 flex items-center gap-2 text-[rgba(18,19,45,0.60)] mulish"><img src="" alt="">29
+                            January 2024</p>
+                        <h3 class="mt-4 mb-3 mulish text-lg font-extrabold">What will a mars habitat force that impact
+                            in our daily life!!!</h3>
+                        <p class="mulish text-[rgba(18,19,45,0.60)]">Yes, you can run unit tests and view the results
+                            directly within the app. </p>
+                        <div class="flex gap-4 mt-4">
+                            <img class="size-11 rounded-[44px]" src="" alt="">
+                            <p class="flex text-start flex-col mulish text-[rgba(18,19,45,0.60)]">
+                                <span class="font-bold text-[#12132D]">Cameron Williamson</span>
+                                Unknown
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 rounded-3xl border-[1px] border-[rgba(18,19,45,0.15)]">
+                    <div class="mx-auto h-[190px] w-[326px] bg-[rgba(18,19,45,0.05)] rounded-[20px]">
+                        <img class="w-full h-full rounded-[20px]" alt="">
+                    </div>
+                    <div class="flex flex-col items-center ">
+                        <p class="flex items-center gap-2 text-[rgba(18,19,45,0.60)] mulish"><img src="" alt="">29
+                            January 2024</p>
+                        <h3 class="mt-4 mb-3 mulish text-lg font-extrabold">What will a mars habitat force that impact
+                            in our daily life!!!</h3>
+                        <p class="mulish text-[rgba(18,19,45,0.60)]">Yes, you can run unit tests and view the results
+                            directly within the app. </p>
+                        <div class="flex gap-4">
+                            <img class="size-11 rounded-[44px]" src="" alt="">
+                            <p class="flex text-start flex-col mulish text-[rgba(18,19,45,0.60)]">
+                                <span class="font-bold text-[#12132D]">Cameron Williamson</span>
+                                Unknown
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-6 rounded-3xl border-[1px] border-[rgba(18,19,45,0.15)]">
+                    <div class="mx-auto h-[190px] w-[326px] bg-[rgba(18,19,45,0.05)] rounded-[20px]">
+                        <img class="w-full h-full rounded-[20px]" alt="">
+                    </div>
+                    <div class="flex flex-col items-center ">
+                        <p class="flex items-center gap-2 text-[rgba(18,19,45,0.60)] mulish"><img src="" alt="">29
+                            January 2024</p>
+                        <h3 class="mt-4 mb-3 mulish text-lg font-extrabold">What will a mars habitat force that impact
+                            in our daily life!!!</h3>
+                        <p class="mulish text-[rgba(18,19,45,0.60)]">Yes, you can run unit tests and view the results
+                            directly within the app. </p>
+                        <div class="flex gap-4">
+                            <img class="size-11 rounded-[44px]" src="" alt="">
+                            <p class="flex text-start flex-col mulish text-[rgba(18,19,45,0.60)]">
+                                <span class="font-bold text-[#12132D]">Cameron Williamson</span>
+                                Unknown
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="h-[490px] mt-12 lg:mt-[100px] bg-gradient-to-b from-[rgba(18,19,45,0.05)] to-[rgba(18,19,45,0.00)]">
+        <section class="max-w-[1170px] mulish mx-auto flex flex-col justify-center items-center h-full">
+            <h3 class="text-[36px] font-black">ReTro</h3>
+            <p class="rgba(18,19,45,0.70) mt-4 mb-8 max-w-[604px] text-center">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC</p>
+            <hr class="bg-[rgba(48,50,94,0.10)] w-full my-12">
+            <p class="rgba(18,19,45,0.50) font-light">2017, All Rights Reserved.</p>
+        </section>
     </footer>
 </body>
 
