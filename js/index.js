@@ -151,3 +151,13 @@ const spinnerLoading =() => {
     }, 2000);
 };
 spinnerLoading();
+
+const spinnerLoading2 =() => {
+    const spinnerElement=getElementById('spinner1');
+    const latestContainer=getElementById('latest-container');
+    setTimeout(() => {
+        spinnerElement.classList.add('hidden');
+        latestContainer.classList.remove('hidden'); 
+    }, 2000);
+};
+spinnerLoading2();
