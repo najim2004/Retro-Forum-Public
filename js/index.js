@@ -1,5 +1,5 @@
-const loadPosts = async () => {
-    const res = await fetch('https://openapi.programming-hero.com/api/retro-forum/posts');
+const loadPosts = async (api='https://openapi.programming-hero.com/api/retro-forum/posts') => {
+    const res = await fetch(api);
     const data = await res.json();
     displayPostData(data.posts);
 }
@@ -11,7 +11,10 @@ const loadLatestPosts = async () => {
 
 const displayPostData = (postData) => {
     const discussPosts = getElementById('discuss-posts');
-
+    discussPosts.innerHTML = '';
+    if (postData.length==0){
+        discussPosts.innerHTML='<h1 class="text-red-500 mulish font-black text-5xl">No Post Found</h1>';
+    }
     postData.forEach(post => {
         const postId = post.id;
         const postCategory = post.category;
@@ -118,6 +121,11 @@ const displayLatestPostData=(latestPostData)=>{
     });
 };
 
+
+const searchPosts = ()=> {
+    const inputFieldValue = getElementById('input-field').value.toLowerCase();
+    loadPosts(`https://openapi.programming-hero.com/api/retro-forum/posts?category=${inputFieldValue}`);
+}
 
 loadLatestPosts();
 loadPosts();
