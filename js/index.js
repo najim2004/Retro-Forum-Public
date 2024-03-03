@@ -46,7 +46,7 @@ const displayPostData = (postData) => {
 
                     <p class="max-w-[569px] text-[rgba(18,19,45,0.60)]">${postDescription}</p>
 
-                    <hr class="border-dashed border-[1px] my-5 border-[rgba(18,19,45,0.25)]">
+                    <hr class="border-dashed border-t-[2px] my-5 border-[rgba(18,19,45,0.25)]">
                     <div class="flex flex-wrap justify-between">
                         <div class="text-[rgba(18,19,45,0.60)] flex gap-6 *:flex *:gap-3 *:items-center">
                             <li><img src="./icons/message.svg" alt="">${commentCount}</li>
